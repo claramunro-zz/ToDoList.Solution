@@ -97,10 +97,11 @@ public List<Item> GetItems()
         MySqlConnection conn = DB.Connection();
         conn.Open();
         MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
-        cmd.CommandText = @"SELECT items.* FROM categories
-            JOIN categories_items ON (categories.id = categories_items.category_id)
-            JOIN items ON (categories_items.item_id = items.id)
-            WHERE categories.id = @CategoryId;";
+        cmd.CommandText = 
+        @"SELECT items.* FROM categories
+        JOIN categories_items ON (categories.id = categories_items.category_id)
+        JOIN items ON (categories_items.item_id = items.id)
+        WHERE categories.id = @CategoryId;";
         MySqlParameter categoryIdParameter = new MySqlParameter();
         categoryIdParameter.ParameterName = "@CategoryId";
         categoryIdParameter.Value = _id;
