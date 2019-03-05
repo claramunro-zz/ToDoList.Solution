@@ -27,6 +27,7 @@ namespace ToDoList.Tests
   //     Assert.AreEqual(typeof(Category), newCategory.GetType());
   //   }
 
+
   //   [TestMethod]
   //   public void GetName_ReturnsName_String()
   //   {
@@ -41,6 +42,7 @@ namespace ToDoList.Tests
   //     Assert.AreEqual(name, result);
   //   }
 
+
   //   // [TestMethod]
   //   // public void GetId_ReturnsCategoryId_Int()
   //   // {
@@ -54,6 +56,7 @@ namespace ToDoList.Tests
   //   //   //Assert
   //   //   Assert.AreEqual(1, result);
   //   // }
+
 
   //  [TestMethod]
   // public void GetAll_ReturnsAllCategoryObjects_CategoryList()
@@ -74,6 +77,7 @@ namespace ToDoList.Tests
   //   CollectionAssert.AreEqual(newList, result);
   // }
 
+
   // [TestMethod]
   // public void Find_ReturnsCategoryInDatabase_Category()
   // {
@@ -87,6 +91,7 @@ namespace ToDoList.Tests
   //   //Assert
   //   Assert.AreEqual(testCategory, foundCategory);
   // }
+
 
   //   [TestMethod]
   //   public void GetItems_ReturnsEmptyItemList_ItemList()
@@ -104,7 +109,6 @@ namespace ToDoList.Tests
   //   }
 
 
-
   //   [TestMethod]
   // public void GetAll_CategoriesEmptyAtFirst_List()
   // {
@@ -114,6 +118,7 @@ namespace ToDoList.Tests
   //   //Assert
   //   Assert.AreEqual(0, result);
   // }
+
 
   //  [TestMethod]
   // public void Equals_ReturnsTrueIfNamesAreTheSame_Category()
@@ -125,6 +130,7 @@ namespace ToDoList.Tests
   //   //Assert
   //   Assert.AreEqual(firstCategory, secondCategory);
   // }
+
 
   //   [TestMethod]
   // public void Save_SavesCategoryToDatabase_CategoryList()
@@ -160,6 +166,8 @@ namespace ToDoList.Tests
   // }
 
 
+
+
     [TestMethod]
         public void GetItems_ReturnsAllCategoryItems_ItemList()
         {
@@ -181,6 +189,8 @@ namespace ToDoList.Tests
         }
 
    
+
+
    
     [TestMethod]
     public void Delete_DeletesCategoryAssociationsFromDatabase_CategoryList()
@@ -201,6 +211,10 @@ namespace ToDoList.Tests
       //Assert
       CollectionAssert.AreEqual(testItemCategories, resultItemCategories);
     }
+
+
+
+
 
 
     [TestMethod]
@@ -225,9 +239,8 @@ namespace ToDoList.Tests
     }
    
    
+
+
+
     }
-
-
-
-
   }
