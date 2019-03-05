@@ -178,7 +178,7 @@ namespace ToDoList.Models
       JOIN categories ON (categories_items.category_id = categories.id)
       WHERE items.id = @ItemId;";
       MySqlParameter itemIdParameter = new MySqlParameter();
-      itemIdParameter.ParameterName = "@itemId";
+      itemIdParameter.ParameterName = "@ItemId";
       itemIdParameter.Value = _id;
       cmd.Parameters.Add(itemIdParameter);
       MySqlDataReader rdr = cmd.ExecuteReader() as MySqlDataReader;
